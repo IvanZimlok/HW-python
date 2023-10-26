@@ -1,0 +1,11 @@
+wide = float(input()) 
+height = float(input()) 
+paipermet = float(input()) 
+V = int(input()) 
+percent = int(input()) 
+ 
+wall = round(wide * height,2) 
+pull = round(wall / paipermet * (percent * 0.01 + 1) ,2) 
+count = round((pull / V)+ 0.5, 0) 
+other = round((count * V - pull) ,2) 
+print(wall, pull, int(count), other)

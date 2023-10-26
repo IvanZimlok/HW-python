@@ -1,0 +1,8 @@
+a = input()
+a = a.replace('&nbsp;', '')
+a = a.replace('span', '')
+a = a.replace('/', '')
+a = a.replace('>', '')
+a = a.replace('P', '')
+a = a.replace('<', '')
+print(a)
